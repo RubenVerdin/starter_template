@@ -1,0 +1,64 @@
+@function hextorgb($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+/* 
+  A Mixin to create an easier media queries.
+*/
+@mixin media($size) {
+  // <Phone
+  @if $size == phone-down {
+    @media (max-width: 639px) { @content; }
+  }
+  // >Phone
+  @else if $size == phone-up {
+    @media (min-width: 640px) { @content; }
+  }
+  // <Tablet
+  @else if $size == tablet-down {
+    @media (max-width: 959px) { @content; }
+  }
+  // >Tablet
+  @else if $size == tablet-up {
+    @media (min-width: 960px) { @content; }
+  }
+  // <Desktop
+  @else if $size == desktop-down {
+    @media (max-width: 1199px) { @content; }
+  }
+  // >Desktop
+  @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  }
+  // <Wide
+  @else if $size == wide-down {
+    @media (max-width: 1599px) { @content; }
+  }
+  // >Wide
+  @else if $size == wide-up {
+    @media (min-width: 1600px) { @content; }
+  }
+}
+
+// Flexbox
+@mixin flexbox(
+    $direction: null,
+    $wrap: null,
+    $align_items: null,
+    $align_content: null,
+    $inline: false ) {
+      
+  @if $inline == true {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+  } @else {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+}
