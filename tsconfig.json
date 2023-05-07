@@ -17,7 +17,7 @@
     "paths": {
       "@lib/*": ["./src/lib/*"],
       "@assets/*": ["./src/assets/*"],
-      "@library/*": ["./src/components/library/*"]
+      "@components/*": ["./src/components/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],

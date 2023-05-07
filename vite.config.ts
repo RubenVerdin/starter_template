@@ -11,7 +11,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       'uikit': path.resolve(__dirname, './node_modules/uikit/dist/js/uikit.min.js'),
       '@lib': path.resolve(__dirname, './src/lib'),
-      '@library': path.resolve(__dirname, './src/components/library'),
+      '@components': path.resolve(__dirname, './src/components/'),
       '@assets': path.resolve(__dirname, './src/assets')
     },
   },
