@@ -6,7 +6,12 @@ import { ref } from 'vue'
 
 <template>
   <main>
-    <h1>Hello</h1>
+    <div class="uk-container">
+      <h1 class="uk3-text-center">Hello</h1>
+
+      <p>This is a simple starter template using Typescript, Vue3, Vite & Uikit</p>
+    </div>
+    
   </main>
 </template>
 

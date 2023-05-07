@@ -3,16 +3,9 @@ import { defineComponent } from "vue"
 
 export default defineComponent({
   components: {},
-  props: {
-    scrollspy: {
-      type: String,
-      default: 'cls: uk-animation-slide-bottom; delay: 300;'
-    },
-  },
+  props: {},
   data() {
-    return {
-
-    }
+    return {}
   },
 })
 </script>
